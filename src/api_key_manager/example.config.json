@@ -1,0 +1,35 @@
+{
+  "api_key_length": 32,
+  "check_expiration_freq": 10,
+  "seconds_till_expiration": 40,
+  "email": {
+    "notification_email": "test@gmail.com",
+    "smtp_server": "localhost",
+    "smtp_port": "1025"
+  },
+  "notifications": {
+    "notice1": {
+      "seconds_till_expiration": 30,
+      "subject": "Your Super Awesome Flask API key will expire in 3 seconds. \nPlease contact support@superawesome.com to get a new key!",
+      "body": "Important: Your API key is about to expire"
+    },
+    "notice2": {
+      "seconds_till_expiration": 20,
+      "subject": "Your Super Awesome Flask API key will expire in 7 seconds. \nPlease contact support@superawesome.com to get a new key!",
+      "body": "Important: Your API key is about to expire"
+    },
+    "final_notice": {
+      "seconds_till_expiration": 10,
+      "subject": "Your Super Awesome Flask API key will expire in 14 seconds. \nPlease contact support@superawesome.com to get a new key!",
+      "body": "Important: Your API key is about to expire"
+    }
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "user": "",
+    "password": "",
+    "db": "api-db",
+    "api_key_collection": "api-keys"
+  }
+}

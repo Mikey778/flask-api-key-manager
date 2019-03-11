@@ -74,8 +74,7 @@ class ApiKeyManager():
         key_obj = self.api_key_collection.find({})
         self.valid_keys = [x['apiKey'] for x in key_obj]
 
-    # TODO set collection from config
-
+    # TODO use mongo helper class
     def mongo_connect(self):
         mongo_obj = self.config.get('mongodb')
         self.client = MongoClient(mongo_obj['host'], mongo_obj['port'])
